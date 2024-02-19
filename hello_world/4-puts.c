@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main - 4-puts
- *Return: Always
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
 int main(voi)
 {
