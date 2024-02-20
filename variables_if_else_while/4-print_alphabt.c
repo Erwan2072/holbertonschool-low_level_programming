@@ -8,7 +8,14 @@
 
 int main(void)
 {
-	int alph;e;q;
+  char alph;
+  
+for (alph = 'a'; alph <= 'z'; alph++)
+{
+if (alph != "e" && alph != "q")
+putchar(alph);
+}
+putchar('\n');
 
-	e = 'e';
-	q = 'q';
+return (0);
+}
