@@ -14,7 +14,7 @@ char alph;
 for (number = '0'; number <= '9'; number++)
 putchar(number);
 for (alph = 'a' ; alph <= 'f' ; alph++)
-putchar(alph)
-
+putchar(alph);
+putchar('\n');
 return (0);
 }
