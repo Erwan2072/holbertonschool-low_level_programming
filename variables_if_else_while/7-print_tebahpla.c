@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <Stdlib.h>
-#include <time.h>
 
 /**
 *main - 7-print_tebalpla.c
