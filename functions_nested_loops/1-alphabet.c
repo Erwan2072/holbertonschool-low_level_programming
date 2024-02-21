@@ -3,17 +3,18 @@
 /**
  *print_alphabet - 1-alphabet.c
  *Description Prints the alphabet followed by a new line
- *Return: 0
+ *Return: void
  */
 
 void print_alphabet(void)
 {
-	char (a);
+	char a = 'a';
 
-	while (a = 'a'; a = 'z'; a++)
+	while (a <= 'z')
 	{
 		_putchar(a);
+		a++;
 	}
 
-	_putchar('\n')
+	_putchar('\n');
 }
