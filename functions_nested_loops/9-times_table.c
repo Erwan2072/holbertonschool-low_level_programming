@@ -12,7 +12,7 @@ void times_table(void)
 	int y;
 	int z;
 
-	for (x = 0 ; x <= 10 ; x++)
+	for (x = 0 ; x < 10 ; x++)
 	{
 		for (y = 0 ; y < 10 ; y++)
 		{
@@ -21,17 +21,17 @@ void times_table(void)
 			{
 				_putchar(z + '0');
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+                                _putchar(' ');
+                                _putchar(' ');
 			}
 
 			if (z < 10 && x != 0)
 			{
+				_putchar(z + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(z + '0');
-			} else if (z >= 10)
+			} else if (z > 9)
 			{
 				_putchar(',');
 				_putchar(' ');
