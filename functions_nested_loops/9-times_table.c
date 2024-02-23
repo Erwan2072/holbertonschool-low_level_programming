@@ -20,6 +20,9 @@ void times_table(void)
 			if (x == 0)
 			{
 				_putchar(z + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 
 			if (z < 10 && x != 0)
