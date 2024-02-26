@@ -10,8 +10,8 @@ void print_numbers(void)
 {
 	int nb;
 
-       for (nb = 0 ; nb < 10 ; nb++)
-	       {
+	for (nb = 0 ; nb < 10 ; nb++)
+	{
 		_putchar(nb + '0');
 	}
 
