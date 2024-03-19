@@ -29,13 +29,9 @@ int main(int argc, char *argv[])
 	if (o == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
-	printf("%d\n", o(a, b));
-
+	printf("%d\n", o(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
