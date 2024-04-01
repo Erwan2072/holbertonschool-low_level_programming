@@ -7,7 +7,7 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node = (struct lists *) malloc(sizeof(struct lists));
+	list_t *new_node = (struct list_s *) malloc(sizeof(struct list_s));
 
 	if (head == NULL || new_node == NULL)
 		return (0);
