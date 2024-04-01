@@ -1,22 +1,28 @@
 #include "lists.h"
 /**
- * print_list - print a list hen she's not empty
- * @h: elements of list
- * Return: size of the list
-*/
+ *print_list - prints all the elements of a list_t list
+ *@h: the list_t list.
+ *
+ * Return: the numbre of nodes in h.
+ */
 size_t print_list(const list_t *h)
 {
-	const list_t *ptr = h;
-	size_t c = 0;
-
-	if (ptr->str == NULL)
-		printf("[0](nil)\n");
-	else
+	/* Initialize the counter for nodes */
+	size_t nodes = 0;
+	/* Traverse the list until we reach the end */
+	while (h)
 	{
-		printf("[%d] %s\n", ptr->len, ptr->str);
-		c++;
-		ptr = ptr->next;
+		/* Check if the string is NULL */
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			/* Print the length and string */
+			printf("[%d] %s\n", h->len, h->str);
+		/* Increment the node counter */
+		nodes++;
+		/* Move to the next element of the list */
+		h = h->next;
 	}
-
-	return (c);
+	/* Return the total number of nodes in the list */
+	return (nodes);
 }
