@@ -1,16 +1,17 @@
 #include "lists.h"
 /**
- * add_node - add a node to a singly linked list
+ * add_node_end - add a node to a singly linked list
  * @head: points to the start of a list
  * @str: string to put in the element
  *
  * Return: the address of the new node
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
 	list_t *current_node;
 	unsigned int i;
+
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 		return (NULL);
